@@ -1,0 +1,354 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #1a001f;
+    color: white;
+  }
+  
+   .header-content, .main-content, .footer-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+  }
+  
+  header {
+    padding: 20px 0;
+    background: #191919; 
+  }
+  
+  .div.header-content {
+    justify-content: space-around;
+  }
+
+  main {
+	text-align: center;
+	background-image: url('images/bg1-darker.png');
+    background-repeat: norepeat;
+	background-position: center;
+	background-size: cover;
+	padding: 20px 0 50px;
+  }
+ 
+  .logo img {
+    height: 40px;
+	text-align: left;
+  }
+
+  .logo{
+    display: inline-block;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+	float: right;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+   nav a:hover {
+    color: #e1306c;
+  }
+  
+  nav a.active {
+    text-decoration: underline;
+  }
+  
+  .hero {
+   	text-align: center;
+    padding: 30px;
+  }
+  
+  .hero-icon {
+    height: 120px;
+    margin-bottom: 20px;
+  }
+  
+  .instagram {
+    color: #e1306c;
+  }
+  
+  .booster {
+    color: #ffffff;
+  }
+  
+  .subtitle {
+    font-size: 1.2em;
+    margin: 20px 0;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+	border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s;
+  }
+  
+ .buttons .btn {
+	box-shadow: 0 0 7px 3px #fff;
+  }
+  
+  .primary {
+    background: white;
+    color: black;
+  }
+  
+  .secondary {
+    background: #ffffffaa;
+    color: black;
+  }
+  
+  .btn:hover {
+    background: #ddd;
+  }
+  
+  .card {
+    display: flex;
+	gap: 20px;
+ 	border-radius: 20px;
+	padding: 20px;
+	border: 1px solid rgba(255,255,255,0.1);
+	background-color:rgba(255,255,255,0.05);
+  }
+  
+  .card img {
+    max-width: 240px;
+	max-height: 250px;
+    border-radius: 12px;
+    float: left;
+  }
+  
+  .card-text {
+    padding: 0 0 20px;
+    text-align: left;
+  }
+  
+  .card-text ul {
+    padding-left: 20px;
+  }
+  
+  .btn.small {
+    background: white;
+    color: black;
+    margin-top: 10px;
+    font-size: 0.9em;
+    padding: 6px 14px;
+  }
+  
+  footer {
+    background: #191919;
+	padding: 30px 0;
+  }
+  
+  .footer-left p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .footer-left a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-right a {
+    margin-left: 10px;
+	float: right;
+  }
+  
+  .footer-right img {
+    height: 24px;
+  }
+  
+
+/* Flexbox - Main */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-item { 
+  flex: auto;
+}
+
+.flex-item-33 { 
+  flex: 33%;
+  align-content: center;
+}
+
+.flex-item-45 { 
+  flex: 45%;
+}
+
+.flex-item-50 { 
+  flex: 50%;
+}
+
+.features .flex-container {
+  gap: 25px 10%;
+}
+
+.flex-container{
+  justify-content: space-between;
+}
+
+
+/* services */
+
+.service-block {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.service-block h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.service-img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn.price {
+  background: white;
+  color: black;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(255,255,255,0.4);
+  transition: background 0.3s;
+}
+
+.btn.price:hover {
+  background: #ddd;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: red;
+  margin-right: 5px;
+}
+
+.new-price {
+  color: rgb(33, 223, 0);
+  font-weight: bold;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background: white;
+  margin: 50px 0;
+}
+
+/* contact */
+
+.contact-main {
+  background-image: url('images/bg1-darker.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-form-container h1 {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 1em;
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  color: black;
+  outline: none;
+}
+
+.contact-form textarea {
+  border-radius: 20px;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 0 7px 2px #fff;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #ddd;
+}
+
+
+
+
+/* Responsive layout */
+@media (max-width: 800px) {
+.flex-item, .flex-item-33, .flex-item-45, .flex-item-50  {
+    flex: 100%;
+  }
+ .card {
+	padding: 7px;
+	gap: 15px;
+	}
+	
+  .card img {
+    max-width: 120px;
+	  max-height: 125px;
+  }
+  
+  h2 {
+	  font-size: 16px;
+  }
+
+  
+li {
+font-size: 13px;
+}
